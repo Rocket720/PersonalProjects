@@ -18,9 +18,7 @@ public class GraphicsTester extends Application{
 
     public static void main(String[] args) {
         launch(args);
-
         Scanner input = new Scanner(System.in);
-
     }
     @Override
     public void start(Stage primaryStage) throws Exception {
