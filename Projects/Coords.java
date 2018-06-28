@@ -7,6 +7,10 @@ public class Coords {
         this.y = y;
     }
 
+    public String toString() {
+        return "[ " + this.getX() + ", " + this.getY() + " ]";
+    }
+
     public int getX() {
         return x;
     }
