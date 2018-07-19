@@ -100,10 +100,26 @@ public class Snake extends Application{
         launchScreen = new Scene(centerScreen, 1920, 1080);
 
         //setting up loseScreen
-        BorderPane lost = new BorderPane();
         Label oof = new Label("O O F");
-        lost.getChildren().addAll(oof);
-        loseScreen = new Scene(lost, 1920, 1080);
+        oof.setMinWidth(100);
+        oof.setMinHeight(150);
+        oof.setScaleY(10);
+        oof.setScaleX(10);
+        oof.setAlignment(Pos.CENTER);
+        Button restart = new Button("Restart Game");
+        start.setOnAction(e -> {
+            window.setScene(gameScreen);
+            gameOn = 1;
+        });
+        start.setPrefSize(200, 100);
+        VBox cS2 = new VBox();
+        cS2.setAlignment(Pos.CENTER);
+        Rectangle bgl = new Rectangle(1880, 980, Color.web("#282828"));
+        bgl.setX(20);
+        bgl.setY(20);
+        Rectangle borderl = new Rectangle(1920, 1080, Color.web("#141414"));
+        cS2.getChildren().addAll(borderl, bgl, oof, restart);
+        loseScreen = new Scene(cS2, 1920, 1080);
 
         //setting up gameScreen
         snake = new ArrayList<>(Arrays.asList(new Coords(1, 1), new Coords(1, 2)));
@@ -184,13 +200,13 @@ public class Snake extends Application{
                         foodSpawn(food);
                         snake.add(new Coords(1, 1));
                     }
+                    if (gameOn == 0) {
+                        window.setScene(loseScreen);
+                    }
                     lastTimeRan = now;
                 }
             }
         }.start();
-        if (gameOn == 0) {
-            window.close();
-        }
         game.getChildren().addAll(border, bg, head, food, field);
 
         //setting up stage
