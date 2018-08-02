@@ -1,3 +1,5 @@
+package Java;
+
 public class Coords {
     int x;
     int y;

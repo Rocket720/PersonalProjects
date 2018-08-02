@@ -1,3 +1,5 @@
+package Java;
+
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.geometry.Pos;
@@ -83,7 +85,7 @@ public class Snake extends Application{
     public void start(Stage primaryStage) throws Exception {
 
         //setting up launch screen
-        Label welcome = new Label("Welcome to Snake.exe");
+        Label welcome = new Label("Welcome to Java.Snake.exe");
         welcome.setMinWidth(100);
         welcome.setMinHeight(150);
         welcome.setScaleY(10);
@@ -212,7 +214,7 @@ public class Snake extends Application{
         //setting up stage
         window = primaryStage;
         window.setMaximized(true);
-        window.setTitle("Snake.exe");
+        window.setTitle("Java.Snake.exe");
         window.setScene(launchScreen);
         window.getIcons().add(new Image("file:logo.png"));
         window.show();
