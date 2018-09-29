@@ -40,15 +40,6 @@ public class Snake extends Application{
         if (head.getX() > 1880 || head.getX() < 0 || head.getY() > 980 || head.getY() < 0) {
             gameOn = 0;
         }
-//        if (head.getX() > 1920) {
-//            head.setX(0);
-//        } else if (head.getX() < 0) {
-//            head.setX(1920);
-//        } else if (head.getY() > 1080) {
-//            head.setY(0);
-//        } else if (head.getY() < 0) {
-//            head.setY(1060);
-//        }
     }
 
     public static void snekCol(Rectangle head) {
