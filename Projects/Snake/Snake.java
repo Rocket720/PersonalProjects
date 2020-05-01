@@ -1,4 +1,4 @@
-package Java;
+package Snake;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
@@ -15,7 +15,9 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import com.sun.javafx.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,7 +27,7 @@ public class Snake extends Application{
     static int yMod = 0;                //y Modulation
     static int xMod = 0;                //x Modulation
     static ArrayList<Coords> snake;
-    static Stage window = new Stage();
+    Stage window = new Stage();
     static Scene launchScreen, gameScreen, loseScreen;
     static int gameOn = 2;
 
@@ -52,7 +54,7 @@ public class Snake extends Application{
 
     public static void body(Rectangle head, GraphicsContext paint) {
         paint.clearRect(0, 0, 1920, 1080);
-        paint.setFill(Color.AQUAMARINE);
+        paint.setFill(Color.AQUA);
         for (int i = 1; i < snake.size(); i++) {
             paint.fillRect(snake.get(i).getX(), snake.get(i).getY(), 20, 20);
         }
@@ -73,12 +75,10 @@ public class Snake extends Application{
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
 
         //setting up launch screen
-        Label welcome = new Label("Welcome to Java.Snake.exe");
-        welcome.setMinWidth(100);
-        welcome.setMinHeight(150);
+        Text welcome = new Text("Welcome to Snake.exe");
         welcome.setScaleY(10);
         welcome.setScaleX(10);
         Button start = new Button("Start Game");
@@ -100,7 +100,7 @@ public class Snake extends Application{
         oof.setScaleX(10);
         oof.setAlignment(Pos.CENTER);
         Button restart = new Button("Restart Game");
-        start.setOnAction(e -> {
+        restart.setOnAction(e -> {
             window.setScene(gameScreen);
             gameOn = 1;
         });
@@ -205,7 +205,7 @@ public class Snake extends Application{
         //setting up stage
         window = primaryStage;
         window.setMaximized(true);
-        window.setTitle("Java.Snake.exe");
+        window.setTitle("Snake.Snake.exe");
         window.setScene(launchScreen);
         window.getIcons().add(new Image("file:logo.png"));
         window.show();

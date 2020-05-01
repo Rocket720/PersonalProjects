@@ -1,4 +1,4 @@
-package Java;
+package Snake;
 
 public class Coords {
     int x;
