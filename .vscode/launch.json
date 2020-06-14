@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FX3DTest",
+            "request": "launch",
+            "mainClass": "JavaFX3D.FX3DTest",
+            "projectName": "PersonalProjects_f7f673c3"
+        }
+    ]
+}

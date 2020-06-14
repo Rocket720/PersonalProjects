@@ -6,12 +6,16 @@ def sigmoid(x):
 def sigmoid_derivative(x):
     return x * (1-x)
 
-training_inputs = np.array([[0,0,1],
-                            [1,1,1],
+training_inputs = np.array([[0,0,0],
+                            [0,0,1],
+                            [0,1,0],
+                            [0,1,1],
+                            [1,0,0],
                             [1,0,1],
-                            [0,1,1]])
+                            [1,1,0],
+                            [1,1,1]])
 
-training_outputs = np.array([[0,1,1,0]]).T
+training_outputs = np.array([[0,0,0,0,1,1,1,1]]).T
 
 np.random.seed(1)
 
