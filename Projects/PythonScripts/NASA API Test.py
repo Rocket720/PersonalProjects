@@ -12,7 +12,10 @@ apodLink = "https://api.nasa.gov/planetary/apod?api_key=" + api_key
 rawData = json.loads(urllib.request.urlopen(apodLink).read())
 imageURL = rawData["hdurl"]
 title = rawData["title"]
+exp = rawData["explanation"]
+
 print(title + ": " + imageURL)
+print(exp)
 webbrowser.open(imageURL)
 
 #Earth
