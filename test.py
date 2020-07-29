@@ -1,5 +1,8 @@
 import math 
 import random
+import sys
+
+#sys.setrecursionlimit(100000)
 # class ThreeDPoint:     
 #     def __init__(self,x,y,z):         
 #         self.x=x         
@@ -238,29 +241,121 @@ import random
 # print("Hello my name is ",name)
 # print("I am ", age, " years old")
 
-board = [["*","*","X"],
-         ["*","X","*"],
-         ["X","*","*"]]
+# board = [["*","*","X"],
+#          ["*","X","*"],
+#          ["X","*","*"]]
 
-for y in range(board[0]):
-    count = 0
-    for x in range(board):
-        if(board[x][y]==player):
-            count+=1
-    if(count==3):
-        print(player, " wins")
-        game = False
+# for y in range(board[0]):
+#     count = 0
+#     for x in range(board):
+#         if(board[x][y]==player):
+#             count+=1
+#     if(count==3):
+#         print(player, " wins")
+#         game = False
 
-count = 0
-for p in range(len(board)):
-    if(board[p][p]==player):
-        count+=1
-if(count==3):
-        print(player, " wins")
-        game = False
+# count = 0
+# for p in range(len(board)):
+#     if(board[p][p]==player):
+#         count+=1
+# if(count==3):
+#         print(player, " wins")
+#         game = False
+
+# if(player=="rock" or player =="Rock" or player=="r"):
+#     player = "rock"
 
 
 
 
+# while(True):
+#     print("Hello")
+    
+#     a = input("Choice: ") 
+#     if(a=="b"):
+#         break
+#     elif(a=="c"):
+#         continue
 
+#     print("World")
+
+
+# def add(x, y):
+#     if(y==0):
+#         return(x)
+#     return( add(x, y-1) + 1) 
+
+# def subtract(x, y):
+#     if(y==0):
+#         return(x)
+#     return( add(x, y-1) - 1) 
+
+# def multiply(x, y):
+#     if(y==0):
+#         return(x)
+#     return( add(x, y-1) + x) 
+
+# def fib(n):
+#     if(n==0 or n== 1):
+#         return 1
+#     return (fib(n-1) + fib(n-2))
+
+# import datetime  
+    
+# # using now() to get current time  
+
+
+# for x in range(1000):
+#     current_time = datetime.datetime.now()  
+#     print(x,":",fib(x), " - Completed in: ", (datetime.datetime.now()-current_time), "s")
+
+
+# webdev_class = []
+# webdes_class = []
+# dnd_class = []
+# python_class = []
+# java_class = []
+
+# while(True):
+#     username = input("Enter your SummerTech username: \n")
+#     password=input("Enter your Password: \n")
+
+#     if(username == "SteveF1nk" and password == "HaveFun20"):
+#         print("Correct Password \n Access Granted")
+#         print("Welcome to SummerTech Steve!")
+#     elif(username == "MattBapt1st" and password == "LearnSomething20"):
+#         print("Correct Password \n Access Granted")
+#         print("Welcome to SummerTech Matt!")
+#     else:
+#         print("Incorrect Username or Password. Try Again.")
+#         continue
+        
+#     choice = input("Which class would you like to take? \n Your options are Python, Java, Web Dev, Web Design, and D&D")
+#     if(choice=="Python"):
+#         python_class.append(username)
+#     elif(choice=="Java"):
+#         java_class.append(username)
+
+
+# String[][] cabinet = new String[][]{
+#     new String[]{" ", " ", " "},
+#     new String[]{" ", " ", " "},
+#     new String[]{" ", " ", " "}};
+
+# cabinet = [ [" ", " ", " "],
+#             [" ", " ", " "],
+#             [" ", " ", " "]]
+
+# sys.setrecursionlimit(10000000)
+# def fib(x):
+#     if (x<=2):
+#         return x
+#     return fib(x-1) + fib(x-2)
+
+# sum = 0
+# for x in range(33):
+#     num = fib(x)
+#     if(num%2==0):
+#         sum+=num
+# print(sum)\
 
