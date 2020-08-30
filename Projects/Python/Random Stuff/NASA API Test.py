@@ -3,7 +3,7 @@ import re
 import urllib.request
 import webbrowser
 
-api_key = "cAmgbVyKaw43yBx9UOmCpwFAR4RxEzzwQ8DFebJY"
+api_key = ""
 
 
 
