@@ -2,7 +2,7 @@ import json
 import re
 import urllib.request
 
-api_key = ""
+api_key = "AIzaSyBpJ_NwQpXXBDcOc1jZuZgKDR99h_8_oic"
 channel_id = "UC-lHJZR3Gqxm24_Vd_AJ5Yw"
 
 jsonLink = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=" + channel_id + "&key=" + api_key

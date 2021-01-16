@@ -359,27 +359,33 @@ import sys
 #         sum+=num
 # print(sum)\
 
-word = "manual"
-hidden = []
-for x in word:
-    hidden.append("_")
-#["_","_","_","_","_","_"]
-pictures = ["   _____  \n   |    |  \n   O    |  \n  /|\   |  \n  /\    |  \n  ______|_ \n"]
-print(pictures[0])
+# word = "manual"
+# hidden = []
+# for x in word:
+#     hidden.append("_")
+# #["_","_","_","_","_","_"]
+# pictures = ["   _____  \n   |    |  \n   O    |  \n  /|\   |  \n  /\    |  \n  ______|_ \n"]
+# print(pictures[0])
 
-used = []
-while(True):
-    letter = input("enter a letter")
+# used = []
+# while(True):
+#     letter = input("enter a letter")
     
-    if(letter in word):
-        count = 0
-        for x in word:
-            if(x==letter):
-                hidden[count] = x
-            count+=1
-    else:
-        used.append(letter)
-        print("Strike ", len(used), "/6", sep = "")
-        if(len(used)==6):
-            print("Game Over!")
-            break
+#     if(letter in word):
+#         count = 0
+#         for x in word:
+#             if(x==letter):
+#                 hidden[count] = x
+#             count+=1
+#     else:
+#         used.append(letter)
+#         print("Strike ", len(used), "/6", sep = "")
+#         if(len(used)==6):
+#             print("Game Over!")
+#             break
+
+
+a = [1,2,3,4]
+b=[5,6,7,8]
+a+=b
+print(a)

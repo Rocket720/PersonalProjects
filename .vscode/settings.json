@@ -12,5 +12,7 @@
     ],
     "launch": {
     
-    }
+    },
+    "python.pythonPath": "C:\\Users\\am680\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+    "jupyter.jupyterServerType": "local"
 }
