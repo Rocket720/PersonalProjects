@@ -98,7 +98,7 @@ class DQN:
             num_steps = 1000
             state = np.reshape(state, [1, self.num_observation_space])
             for step in range(num_steps):
-                env.render()
+                # env.render()
                 received_action = self.get_action(state)
                 # print("received_action:", received_action)
                 next_state, reward, done, info = env.step(received_action)

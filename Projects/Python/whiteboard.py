@@ -1,6 +1,7 @@
 import math 
 import random
 import sys
+from collections import deque 
 
 #sys.setrecursionlimit(100000)
 # class ThreeDPoint:     
@@ -385,7 +386,18 @@ import sys
 #             break
 
 
-a = [1,2,3,4]
-b=[5,6,7,8]
-a+=b
+# a = [1,2,3,4]
+# b=[5,6,7,8]
+# a+=b
+# print(a)
+
+a = deque(maxlen=5)
+a.append(0)
+print(a)
+a.append(1)
+a.append(2)
+a.append(3)
+a.append(4)
+print(a)
+a.append(5)
 print(a)
