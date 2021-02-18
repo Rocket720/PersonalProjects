@@ -14,6 +14,8 @@ imageURL = rawData["hdurl"]
 title = rawData["title"]
 exp = rawData["explanation"]
 
+print(rawData)
+print()
 print(title + ": " + imageURL)
 print(exp)
 webbrowser.open(imageURL)
